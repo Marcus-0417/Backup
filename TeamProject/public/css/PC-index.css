@@ -1,0 +1,464 @@
+@charset "UTF-8";
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,
+h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,
+code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,
+ruby,section,summary,time,mark,audio,video,main 
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+
+}
+
+* {
+  box-sizing: border-box;
+  /* 不累加邊框與內距 */
+}
+
+/* 英文和數字的特殊樣式 */
+.num,
+.english {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 設定的參數 */
+:root {
+  --primary-1: #464646;
+  --primary-2: #F9D615;
+  --link: #6A4217;
+  --text: #333;
+  --text2:#fff;
+  --active: red;
+  --background: #f2e9d4;
+
+}
+
+body,h1,ul,p,h2 ,button
+{
+  font-family: 'Noto Sans TC', sans-serif;
+  /* 預設中文字型 */
+  color: var(--text);
+}
+
+/* h1 樣式 */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  /* 設定較大的文字大小 */
+  margin-bottom: 10px;
+}
+
+/* h2 樣式 */
+h2 {
+  font-size: 1.5rem;
+  /* 設定比 h1 小的文字大小 */
+  margin-bottom: 8px;
+}
+
+
+ul {
+  list-style-type: none;
+
+}
+img {
+  display: block;
+  /* 取消inline-block預設空白 */
+  width: 100%;
+ 
+}
+
+a {
+  color: var(--link);
+  text-decoration-line: none;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background);
+
+}
+
+a:hover {
+  color: var(--primary-1);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+
+}
+
+main {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content:start ;
+  position: relative;
+ 
+}
+
+/* 配對首頁區 */
+#topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+#topbar .logo {
+  width: 70px;
+  height: 76px;
+  margin: 0 20px;
+  /*svg圖檔，預設抓父元素的寬度*/
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 998;
+}
+
+.menu {
+  display: flex;
+  padding: 0 200px;
+
+}
+
+.menu a {
+  margin: 15px;
+  padding: 7px 0 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+ 
+}
+
+.menu a:hover{
+  color: #00ff88 ;
+  border-bottom: 2px solid transparent ;
+  text-decoration-line: none;
+ 
+
+}
+/* 側邊區按鈕區 */
+#sidebar {
+
+  margin-top: 100px;
+  height: auto;
+  width: 200px;
+  
+}
+
+.sidebar-item01 {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  margin-bottom: 20px;
+
+}
+
+.sidebar-item01 img{
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-item01 h2 {
+  position: absolute;
+  top: 22px;
+  left: 52px;
+
+}
+
+.sidebar-item02 {
+  position: relative;
+  width: 180px;
+  height: 80px;
+}
+
+.sidebar-item02 img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.sidebar-item02 h2 {
+  position: absolute;
+  top: 22px;
+  left: 62px;
+}
+
+
+/* 內容區 */
+#rule-box {
+
+
+  width: 600px;
+  height: 650px;
+  position: relative;
+  margin-left:120px;
+  margin-top:100px;
+  
+
+}
+#rule-box img{
+  width: 100%;
+  height: 100%;
+}
+
+.rule-title {
+  position: absolute;
+  display: flex;
+  top: 0;
+  margin: 60px 160px;
+ 
+}
+
+.rule-title img {
+
+  padding: 0 15px;
+
+}
+
+.rule {
+  position: absolute;
+  margin: 140px  77px;
+  top: 0;
+  text-align: justify;
+
+}
+
+.rule p {
+  padding: 25px 0;
+  color: var(--primary-1);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2em;
+  letter-spacing: 3px;
+ 
+}
+
+.rule span{
+  color:var(--text2) ;
+}
+/* 台灣區 */
+#taiwan{
+  margin-top: 150px;
+  margin-left:130px;
+  width: 500px;
+  height: 550px;
+  position: relative;
+}
+#taiwan img{
+  width: 100%;
+  height: 100%;
+  
+}
+/* 離島 */
+#islands{
+  position: absolute;
+
+  top: 170px;
+  left: 40px;
+}
+/* 北部 */
+#north{
+  position: absolute;
+  top: 100px;
+  right:200px;
+}
+
+/* 中部 */
+#central {
+  position: absolute;
+  top: 200px;
+  right: 280px;
+}
+/* 南部 */
+#south {
+  position: absolute;
+  bottom: 150px;
+  left: 160px;
+
+}
+/* 東部 */
+#east {
+  position: absolute;
+ 
+  bottom: 230px;
+  right: 210px;
+}
+
+
+
+/* 顯示的小視窗 */
+.point button{
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  background-color: #e2ca9e;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* 添加平滑過渡效果 */
+}
+.point button:hover {
+  background-color: #8A5D3B; /* 滑鼠移入時的顏色 */
+ 
+  transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
+}
+.point button.active {
+  background-color: #8A5D3B; /* 點擊後保持的顏色 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); /* 保持的陰影效果 */
+  transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
+}
+.popover {
+  position: absolute;
+  display: none;
+
+  background-image: url(../images/p2-papers-1.jpg);
+  border-radius: 10px;
+  width: 164px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  opacity:90%;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+}
+.popover-title{
+  display: flex;
+  margin:auto;
+
+  
+}
+#taiwan .popover-title img{
+  margin-left: 4px;
+  width: 30px;
+  height: 30px;
+}
+.total{
+  background-image: url(../images/p2-papers-1.jpg);
+  background-position: center bottom;
+  border-radius: 10px;
+  border:1px solid #ffffff;
+  width: 140px;
+  height: 30px;
+  margin-top:12px ;
+  
+}
+.r-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#taiwan .r-title img{
+width: 28px;
+height: 28px;
+margin: 5px;
+
+}
+.rankings{
+  background-image: url(../images/p2-papers-1.jpg);
+  background-position: center bottom;
+  border-radius: 10px;
+  border:1px solid #ffffff;
+  width: 140px;
+  height: 98px;
+  margin: auto;
+}
+
+
+/* 配對按鈕 */
+
+#button-pair button {
+  position: absolute;
+  background-image: url(../images/btn-1.jpg);
+  width: 200px;
+  height: 45px;
+  background-size: 100%;
+  bottom: 100px;
+  left: 45%;
+  font-size: 18px;
+  color: var(--primary-1);
+  border: none;
+  cursor: pointer;
+ 
+
+}
+
+button:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* 裝飾區 */
+/* 白花 */
+.img01{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: 220px;
+  left: 220px;
+
+}
+/* APPROVED印章 */
+.img02{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  bottom: 150px;
+  left: 480px;
+}
+/* 郵票 */
+.img03{
+  position: absolute;
+  width: 120px;
+  height: 140px;
+  top: 120px;
+  left: 550px;
+  transform: rotate(25deg);
+}
+/*UPDATE印章  */
+.img04{
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  top: 100px;
+  left: 980px;
+  transform: rotate(20deg); 
+}
+/* rule-box左下的紙 */
+.img05{
+  position: absolute;
+  width: 250px;
+  height: 260px;
+  bottom: 100px;
+  left:1010px;
+  transform: rotate(20deg); 
+}
+/* 頁尾區 */
+
+
+footer {
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  background-color: #E2CA9E;
+  width: 100%;
+  height: 65px;
+
+  letter-spacing: 3px;
+  color: #000;
+
+}

@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans TC", serif;
+    background-image: url(../images/background.png);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+/* 頁首 */
+#topbar {
+    display: flex;
+    justify-content: space-between;
+}
+#topbar .logo a img { 
+    height: 70px;
+    width: 70px;
+    margin-left: 50px;
+   
+}
+
+#topbar .navigation .menu {
+    list-style-type:none ;
+    display: flex;
+    padding: 0 200px;
+
+}
+
+#topbar .navigation .menu a {
+  margin: 15px;
+  padding: 7px 0 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+  text-decoration:none;
+  color: #222;
+}
+#topbar .navigation .menu a:hover{
+
+  color: #00ff88;
+  border-bottom: 2px solid transparent;
+} 
+
+
+/* 內容區 */
+/* 左側按鈕 */
+.wrap {
+    margin-top: 40px;
+    display: flex;
+}
+
+.btn {
+    flex-direction: column;
+    display: flex;
+    margin-left: 100px;
+}
+.btn button{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #464646;
+    border: none;
+    width: 175px;
+    height: 55px;
+    background-image: url(../images/btn-3.png);
+    background-color: transparent;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+
+/* 中間內容 */
+.main {
+    flex-direction: column;
+    width: 900px;
+    height: 650px;
+    background-image: url(../images/p5-papers-1.png);
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 250px;
+}
+.info {
+    display: flex;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.title .block {
+    display: flex;
+    display: inline-block;
+    background-color: #E2CA9E;
+    color: #8A5D3B;
+    padding: 7px 7px;
+    margin-left: 20px;
+}
+
+.block1 {
+    clip-path: polygon(0% 0%,100% 0%,90% 100%,10% 100%);
+}
+.block2 {
+    clip-path: polygon(0% 0%,100% 0%,100% 80%,20% 100%);
+}
+.block3 {
+    clip-path: polygon(10% 0%,90% 0%,100% 100%,0% 90%);
+}
+.block4 {
+    clip-path: polygon(0% 10%,100% 0%,90% 100%,10% 90%);
+}
+.block5 {
+    clip-path: polygon(0% 0%,100% 10%,90% 100%,0% 80%);
+}
+.block6 {
+    clip-path: polygon(10% 0%,100% 20%,90% 100%,10% 100%);
+}
+
+.block:nth-child(1) {transform: rotate(5deg);}
+.block:nth-child(2) {transform: rotate(-3deg);}
+.block:nth-child(3) {transform: rotate(-5deg);}
+.block:nth-child(4) {transform: rotate(7deg);}
+.block:nth-child(5) {transform: rotate(-8deg);}
+.block:nth-child(6) {transform: rotate(5deg);}
+
+.box1 {
+    background-image: url(../images/p5-papers-2.png);
+    width: 365px;
+    height: 388px;
+    background-repeat: no-repeat;
+    padding: 50px 0 0 50px;
+    margin-left: 70px;
+}
+.box1 h3 {
+    font-size: 18px;
+    letter-spacing: 20%;
+    color: #464646;
+    margin-top: 50px;
+}
+.box1 p {
+    font-size: 14px;
+    letter-spacing: 20%;
+    width: 260px;
+    line-height: 200%;
+    margin-top: 10px;
+    color: #464646;
+}
+
+.box2 {
+    background-image: url(../images/p5-papers-2.png);
+    width: 365px;
+    height: 388px;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+.box2 h3 {
+    font-size: 18px;
+    letter-spacing: 20%;
+    color: #464646;
+    margin-top: 50px;
+}
+.box2 p {
+    font-size: 14px;
+    letter-spacing: 20%;
+    width: 260px;
+    line-height: 200%;
+    margin-top: 10px;
+    color: #464646;
+}
+
+/* 裝飾區 */
+.pic1 {
+    position: absolute;
+    left: 410px;
+    bottom: 180px;
+}
+.pic2 {
+    position: absolute;
+    right: 380px;
+    top :100px;
+    transform: rotate(-5deg);
+}
+.pic3 img {
+    width: 250px;
+    height: 170px;
+}
+.pic3 {
+    position: absolute;
+    left: 80px;
+    bottom: 220px;
+    transform: rotate(-15deg);
+}
+.pic4 img {
+    width: 300px;
+    height: 370px;
+}
+.pic4 {
+    position: absolute;
+    left: 280px;
+    bottom: 170px;
+    transform: rotate(-2deg);
+}
+.pic5 img {
+    width: 130px;
+    height: 130px;
+}
+.pic5 {
+    position: absolute;
+    right: 400px;
+    bottom: 220px;
+}
+.pic6 img {
+    width: 340px;
+    height: 320px;
+}
+.pic6 {
+    position: absolute;
+    right: 20px;
+    bottom: 300px;
+    transform: rotate(5deg);
+
+  
+}
+.pic7 img {
+    width: 300px;
+    height: 290px;
+}
+.pic7 {
+    position: absolute;
+    right: 100px;
+    bottom: 210px;
+    transform: rotate(-50deg);
+  
+}
+.pic8 {
+    position: absolute;
+    left: 700px;
+    top: 270px;
+    transform: rotate(5deg);
+}
+.pic9 {
+    position: absolute;
+    right: 650px;
+    top: 270px;
+    transform: rotate(10deg);
+}
+
+/* 頁尾區 */
+footer {
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  background-color: #E2CA9E;
+  width: 100%;
+  height: 65px;
+ 
+  letter-spacing: 3px;
+  color: #000;
+
+}
