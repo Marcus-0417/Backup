@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輸入明信片ID</title>
+    <link rel="stylesheet" href="./css/id.css">
+  </head>
+
+  <body>
+    <!--頁首區（擋頭區）-->
+    <header id="topbar">
+      <!--logo區-->
+      <h1 class="logo">
+        <!--連回首頁-->
+        <a href="./">
+          <!-- svg圖檔，預設抓父元素的寬度 -->
+          <img src="./images/logo.svg" alt=""> <!--src=source-->
+        </a>
+      </h1>
+      <!-- 導覽列 -->
+      <!-- 導覽列 -->
+      <nav class="navigation">
+        <ul class="menu">
+          <!-- ul的下層必須是li -->
+          <li><a href="./">首頁</a></li>
+          <li><a href="./PC-index.html">配對明信片</a></li>
+          <li><a href="./Member-Index.html">會員專區</a></li>
+          <li><a href="./about.html">關於</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 左側區域 -->
+      <aside>
+        <div id="sidebar">
+          <!-- 寄件區 -->
+          <div class="sidebar-item01">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./post.html">寄件區</a></h2>
+          </div>
+          <!-- 紀錄區 -->
+          <div class="sidebar-item02">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./receive_record.html">紀錄</a></h2>
+
+          </div>
+        </div>
+      </aside>
+
+      <!-- 輸入內容區 -->
+
+      <div id="id-box">
+        <div class="bg01">
+          <img src="./images/p2-papers-3.jpg" alt="">
+
+        </div>
+        <div class="bg02">
+          <img src="./images/p2-papers-2.jpg" alt="">
+        </div>
+        <div class="bg03">
+          <img src="./images/p2-papers-4.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>明信片ID</h2>
+          <h2>收件日期</h2>
+        </div>
+        <hr>
+        <div class="input-box">
+
+          <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" value="請輸入明信片上的ID" />
+          <input type="date" id="input_date" name="input_date" min="2024-12-05T00:00" max="3024-12-31T00:00">
+        </div>
+        <div id="btn-sure">
+          <button>確認</button>
+        </div>
+
+    </main>
+    <!-- 連結區 -->
+    </div>
+    <div class="link-id">
+      <a href="./input_id.html">輸入明信片ID</a>
+    </div>
+    <div class="receipt-record">
+      <a href="./receive_record.html">收件紀錄</a>
+    </div>
+
+    <div class="send-record">
+      <a href="./post_record.html">寄件紀錄</a>
+    </div>
+    <!-- 迴紋針 -->
+    <div class="paper-clip01">
+      <img src="./images/paper_clip-red.png" alt="">
+     </div>
+     <div class="paper-clip02">
+      <img src="./images/paper_clip-red.png" alt="">
+     </div>
+     <div class="paper-clip03">
+       <img src="./images/paper_clip-red.png"alt="">
+     </div>
+
+     <!-- 裝飾區 -->
+      <figure class="img01"><img src="./images/postmask-5.png" alt=""></figure>
+      <figure class="img02"><img src="./images/postmark-3.png" alt=""></figure>
+      <figure class="img03"><img src="./images/stamp-1.png" alt=""></figure>
+      <figure class="img04"><img src="./images/small_paper-3.png" alt=""></figure>
+      <figure class="img05"><img src="./images/stamp-8.png" alt=""></figure>
+      <figure class="img06"><img src="./images/stamp-7.png" alt=""></figure>
+    <!--頁尾區-->
+    <footer>
+
+      <p>郵你真好© 2024 postcard.com</p>
+
+    </footer>
+
+  </body>
+
+</html>

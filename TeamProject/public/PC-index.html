@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配對明信片</title>
+    <link rel="stylesheet" href="./css/PC-index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--頁首區（擋頭區）-->
+    <header id="topbar">
+      <!--logo區-->
+      <h1 class="logo">
+        <!--連回首頁-->
+        <a href="./">
+          <!-- svg圖檔，預設抓父元素的寬度 -->
+          <img src="./images/logo.svg" alt=""> <!--src=source-->
+        </a>
+      </h1>
+      <!-- 導覽列 -->
+      <nav class="navigation">
+        <ul class="menu">
+          <!-- ul的下層必須是li -->
+          <li><a href="./">首頁</a></li>
+          <li><a href="./PC-index.html">配對明信片</a></li>
+          <li><a href="./Member-Index.html">會員專區</a></li>
+          <li><a href="./about.html">關於</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <!--主要內容區-->
+    <main>
+      <aside>
+        <div id="sidebar">
+          <!-- 寄件區 -->
+          <div class="sidebar-item01">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./post.html">寄件區</a></h2>
+          </div>
+          <!-- 紀錄區 -->
+          <div class="sidebar-item02">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./receive_record.html">紀錄</a></h2>
+
+          </div>
+        </div>
+
+
+      </aside>
+
+
+      <!-- 內容區 -->
+      <div id="rule-box">
+        <img src="./images/p2-papers-1.jpg" alt="">
+        <div class="rule-title">
+          <img src="./images/規.svg" alt="">
+          <img src="./images/則.svg" alt="">
+          <img src="./images/說.svg" alt="">
+          <img src="./images/明.svg" alt="">
+        </div>
+        <div class="rule">
+
+          <p>1. 點擊開始配對：郵你真好為您<span>隨機選擇</span>一位用戶來寄送明信片，他們將與您共享其地址與一些詳細資料。每一張明信片提供一組不重複的序號（如#12345），用於標識您將要發送的明信片ID。</p>
+          <p>2. 請記得在明信片上寫上明信片ID、郵遞區號、地址和收件人名稱。</p>
+          <p>3.若您有收到來自其他用戶的明信片，請記得前往<span>記錄</span>中的<span>「明信片ID」</span>填寫明信片ID喔！
+          </p>
+        </div>
+      </div>
+
+      <div id="taiwan">
+        <img src="./images/taiwan_picture.svg" alt="">
+
+        <div id="islands" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
+
+          <div id="popover1" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="north" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
+
+          <div id="popover2" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="central" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
+
+          <div id="popover3" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+
+        <div id="south" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover4')",></button>
+
+          <div id="popover4" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="east" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
+
+          <div id="popover5" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+
+      </div>
+      <div id="button-pair">
+        <button onclick="location.href='./post.html'">開始配對</button>
+      </div>
+
+    </main>
+
+    <!-- 裝飾區 -->
+     <!-- 白花 -->
+     <figure class="img01">
+      <img src="./images/flowers-2.png" alt="">
+    </figure>
+    <!--  APPROVED印章 -->
+     <figure class="img02"><img src="./images/postmark-2.svg" alt="">
+    </figure>
+    <!-- 郵票 -->
+     <figure class="img03"><img src="./images/stamp-7.png" alt="">
+    </figure>
+    <!-- UPDATE印章 -->
+     <figure class="img04"><img src="./images/postmark-3.png" alt="">
+    </figure>
+    <!-- rule-box左下的紙 -->
+     <figure class="img05"><img src="./images/small_paper-3.png" alt="">
+    </figure>
+
+    <!--頁尾區-->
+    <footer>
+
+      <p>郵你真好© 2024 postcard.com</p>
+      
+    </footer>
+
+    <script src="./js/taiwan.js"></script>
+  </body>
+
+</html>

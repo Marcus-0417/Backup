@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配對區</title>
+    <link rel="stylesheet" href="./css/post.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--頁首區（擋頭區）-->
+    <header id="topbar">
+      <!--logo區-->
+      <h1 class="logo">
+        <!--連回首頁-->
+        <a href="./">
+          <!-- svg圖檔，預設抓父元素的寬度 -->
+          <img src="./images/logo.svg" alt=""> <!--src=source-->
+        </a>
+      </h1>
+      <!-- 導覽列 -->
+      <nav class="navigation">
+        <ul class="menu">
+          <!-- ul的下層必須是li -->
+          <li><a href="./">首頁</a></li>
+          <li><a href="./PC-index.html">配對明信片</a></li>
+          <li><a href="./Member-Index.html">會員專區</a></li>
+          <li><a href="./about.html">關於</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <!--主要內容區-->
+    <main>
+      <aside>
+        <div id="sidebar">
+          <!-- 寄件區 -->
+          <div class="sidebar-item01">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./post.html">寄件區</a></h2>
+          </div>
+          <!-- 紀錄區 -->
+          <div class="sidebar-item02">
+            <img src="./images/btn-3.svg" alt="">
+            <h2><a href="./receive_record.html">紀錄</a></h2>
+
+          </div>
+        </div>
+
+
+      </aside>
+
+
+      <!-- 內容區 -->
+      <div id="post-box">
+        <img src="./images/p2-papers-1.jpg" alt="">
+        <!-- 地區、收件、寄件 -->
+        <div id="p-content">
+          <div class="p01">
+            <img src="./images/p01.svg" alt="">
+            <img src="./images/P01-2.svg" alt="">
+            <div class="p-box">
+              <p>台北市</p>
+            </div>
+          </div>
+          <div class="p02">
+            <img src="./images/P02.svg" alt="">
+            <img src="./images/P02-2.svg" alt="">
+            <div class="p-box">
+              <p>27封</p>
+            </div>
+          </div>
+
+          <div class="p03">
+            <img src="./images/P03.svg" alt="">
+            <img src="./images/P03-2.svg" alt="">
+            <div class="p-box">
+              <p>13封</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- 頭像、id -->
+
+        <div class="photo-frame">
+          <img src="./images/stamp-2.png" alt="">
+        </div>
+        <div class="photo">
+          <img src="./images/girl.png" alt="">
+        </div>
+
+        <div class="person-id">
+          <p>@hsuannnn111</p>
+        </div>
+
+        <div class="send-postcard">
+          <p>對方最近寄出的明信片</p>
+          <div class="pc01">
+            <div class="pc01-frame">
+              <img src="./images/stamp-2.png" alt="">
+            </div>
+            <div class="pc01-photo">
+              <img src="./images/postcard-taipei101-sunrise-1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="pc02">
+            <div class="pc02-frame">
+              <img src="./images/stamp-2.png" alt="">
+            </div>
+            <div class="pc02-photo"> <img src="./images/postcard-beach.jpg" alt=""></div>
+          </div>
+
+        </div>
+
+        <div class="about-other">
+          <img src="./images/關於對方區塊.svg" alt="">
+          <div class="other-title">
+            <img src="./images/主題區塊.svg" alt="">
+          </div>
+          <p>你好~我很喜歡拍照，所以喜歡蒐集有動物以及古蹟、建築物的明信片!
+            我會懷著期待的心情等待的，期待收到漂亮的明信片!</p>
+         
+        </div>
+        <div class="other-content">
+          <div class="other-id">
+            <h2>明信片 ID : #123abcd4</h2>
+            <small>不要忘記把明信片ID寫在明信片上喔!!!</small>
+          </div>
+          <div class="other-name">
+            <p>配對者 : 辛郝蕾</p>
+            <p>地址:</p>
+            <p>100025 台北市中正區濟南路一段 321號 </p>
+          
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div id="taiwan">
+        <img src="./images/taiwan_picture.svg" alt="">
+
+        <div id="islands" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
+
+          <div id="popover1" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="north" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
+
+          <div id="popover2" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="central" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
+
+          <div id="popover3" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+
+        <div id="south" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover4')"></button>
+
+          <div id="popover4" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+        <div id="east" class="point">
+          <button onclick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
+
+          <div id="popover5" class="popover">
+            <div class="popover-title">
+              <img src="./images/寄.svg" alt="">
+              <img src="./images/件.svg" alt="">
+              <img src="./images/總.svg" alt="">
+              <img src="./images/數.svg" alt="">
+
+            </div>
+            <div class="total"></div>
+            <div class="r-title">
+              <img src="./images/排.svg" alt="">
+              <img src="./images/行.svg" alt="">
+              <img src="./images/榜.svg" alt="">
+            </div>
+            <div class="rankings"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </main>
+
+    <!-- 裝飾區 --> 
+    <!-- 白花 -->
+    <figure class="img01">
+      <img src="./images/flowers-2.png" alt="">
+    </figure>
+    <!--  APPROVED印章 -->
+    <figure class="img02"><img src="./images/postmark-2.svg" alt="">
+    </figure>
+    <!-- 多張郵票 -->
+    <figure class="img03"><img src="./images/stamps.svg" alt="">
+    </figure>
+    <!-- UPDATE印章 -->
+    <figure class="img04"><img src="./images/postmark-3.png" alt="">
+    </figure>
+    <!-- rule-box左下的紙 -->
+    <figure class="img05"><img src="./images/small_paper-3.png" alt="">
+    </figure>
+
+    <!--頁尾區-->
+    <footer>
+
+      <p>郵你真好© 2024 postcard.com</p>
+
+    </footer>
+
+    <script src="./js/taiwan.js"></script>
+  </body>
+
+</html>
